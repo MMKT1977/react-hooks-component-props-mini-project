@@ -4,8 +4,6 @@ import Header from "./Header";
 import About from "./About";
 import ArticleList from "./ArticleList";
 
-console.log(blogData);
-
 const { name ,image, about, posts}= blogData;
 
 function App() {
@@ -14,7 +12,7 @@ function App() {
       
       <Header name ={name}/>
       <About image ={image} about={about}/>
-      <ArticleList posts={post}/>
+      <ArticleList posts={posts}/>
 
     </div>
   );
